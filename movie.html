@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Details</title>
+    <link rel="stylesheet" href="css/styles_movie.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Start Header -->
+    <div class="header">
+        <div class="container">
+            <img class="logo" src="img/logo.png" alt="">
+            <h1>Movie Network</h1>
+            <div class="link">
+                <span class="icon" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </span>
+                <ul id="menu">
+                    <li><a href="#Home">Home</a></li>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#Help">Help</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- End Header -->
+    <!-- Start Movie Details Section -->
+    <div class="movie-details">
+        <div class="container-moive">
+            <!-- Display movie details dynamically using JavaScript -->
+            <h2 id="movie-title">Movie Title</h2>
+            <p id="movie-overview">Movie overview will be displayed here.</p>
+            <img src="" alt="Movie Poster" id="movie-poster" class="poster">
+            <br>
+            <a href="#" class="btn">Watch Trailer</a>
+            <p id="movie-genres">Genres: Genre 1, Genre 2</p>
+            <br>
+            <a href="#" class="btn" onclick="goBack()">Go Back</a>
+        </div>
+    </div>
+    <!-- End Movie Details Section -->
+    <script src="js/movie_script.js"></script>
+</body>
+</html>

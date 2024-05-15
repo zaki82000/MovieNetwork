@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Network</title>
+    <link rel="stylesheet" href="css/mian.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+            <div>
+                <img class="logo" src="img/logo.png" alt="">
+                <span class="site-name">Movie Network</span>
+            </div>
+            <div class="search-box">
+                <input type="text" class="search-input" placeholder="Search...">
+            </div>
+            <div class="link">
+                <span class="icon" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </span>
+                <ul id="menu">
+                    <li><a href="#Home">Home</a></li>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#Help">Help</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="landing">
+        <div class="intro-text">
+            <h1></h1>
+        </div>
+    </div>
+    <h2 class="new-movie">New Movies</h2>
+    <div class="movie-grid" id="movie-grid">
+        <!-- Movie cards will be dynamically added here -->
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
